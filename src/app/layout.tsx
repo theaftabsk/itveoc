@@ -37,30 +37,71 @@ export const metadata: Metadata = {
   description:
     "ITVEXO is a leading AI automation, software development, website development, and digital marketing company in India helping startups and businesses scale with modern technology solutions.",
   keywords: [
-    // Core Business
+    // Core Business & Authority
     "Best IT Company in India", "Top IT Company", "Best Software Company",
     "IT Solutions Company", "Software Development Company", "AI Software Company",
     "Web Development Agency", "Digital Solutions Company", "Tech Company India", "Global IT Agency",
-    // Website Dev
+    "IT Services Company", "Software Development Agency India", "Enterprise Software Company",
+    "Best Software Development Company India", "Top Software Development Company India",
+    "AI Development Company India", "AI Automation Agency India", "Top AI Agency in India",
+    "Best Web Development Company in India", "Top Web Development Company in India",
+
+    // Website Development & Frameworks
     "Website Development Company", "Custom Website Development", "Next.js Development Agency",
     "React Website Development", "Full Stack Development Company", "Business Website Development",
     "E-Commerce Website Company", "Web Application Development", "Startup Website Agency",
-    // AI
+    "Next.js Developers India", "React JS Development Services", "Node.js Web Development",
+    "Python Web Development Company", "PHP Web Development India", "Custom WordPress Development",
+    "Tailwind CSS Web Developers", "TypeScript Web Application Development", "Headless CMS Development",
+    "Shopify Development Agency", "WooCommerce Developers India", "MERN Stack Development Company",
+
+    // AI, Machine Learning & Automation
     "AI Automation Agency", "AI Software Development", "ChatGPT Integration Services",
     "AI Chatbot Development", "Generative AI Solutions", "AI Workflow Automation",
     "OpenAI Integration Company", "AI Business Automation", "AI SaaS Development", "AI Agency India",
-    // SaaS
+    "Claude AI Integration Services", "Custom LLM Development Company", "AI Lead Generation Automation",
+    "AI Customer Support Automation", "LangChain Developers India", "NLP Development Services",
+    "Machine Learning Engineers India", "Speech Recognition Software", "AI Data Analytics Services",
+    "Voice Assistant Integration", "Custom AI Copilot Development", "AI Agents for Business",
+
+    // SaaS & Startup MVP Development
     "SaaS Development Company", "SaaS Product Development", "Cloud Software Development",
     "MVP Development Agency", "Startup SaaS Solutions", "Enterprise SaaS Development",
-    // Marketing
+    "CTO as a Service for Startups", "Fractional CTO Services India", "Micro SaaS Development",
+    "Multi-tenant SaaS Architecture", "SaaS Billing Integration Stripe", "Rapid MVP Development",
+    "Launch SaaS in 4 Weeks", "SaaS Product Design Agency", "Cloud Native App Development",
+    "AWS SaaS Architecture", "SaaS Developer Team India", "SaaS Security Compliance",
+
+    // Digital Marketing, Meta Ads & SEO
     "Digital Marketing Agency", "Meta Ads Agency", "Facebook Ads Expert",
     "Performance Marketing Agency", "SEO Agency India", "Growth Marketing Company",
-    // Local
+    "Meta Ads for E-Commerce", "High ROI Facebook Ads Agency", "Instagram Ads Specialist",
+    "Lead Generation Ads Agency", "Google Search Ads Management", "PPC Campaign Management India",
+    "Technical SEO Services", "Local SEO Agency Kolkata", "On Page SEO Optimization",
+    "SEO Strategy for SaaS Startups", "Search Engine Optimization Company India", "Conversion Rate Optimization CRO",
+
+    // Local City Targeting (Kolkata & Indian Tech Hubs)
     "Best IT Company in Kolkata", "IT Company in India", "Software Company in West Bengal",
     "Web Development Company India", "AI Company India", "SaaS Development India",
-    // High Intent
+    "Best IT Company in Bangalore", "Top Software Company in Bangalore", "Web Development Agency Mumbai",
+    "Software Developers in Hyderabad", "AI Automation Agency Pune", "Next.js Development Delhi NCR",
+    "React Developers Chennai", "Tech Startup Agency Gurgaon", "IT Services Noida",
+
+    // Global Target Markets
+    "US Software Development Agency", "UK AI Automation Company", "Canada SaaS Developers",
+    "Australia Web Design Agency", "UAE Digital Solutions Agency", "Singapore IT Consultants",
+    "Offshore Software Development India", "Outsource Web Development to India", "Hire Dedicated Developers India",
+
+    // High Intent & Action Keywords
     "Hire Web Developers", "Hire AI Developers", "Best Startup Agency",
-    "Best SaaS Developers", "IT Company for Startups",
+    "Best SaaS Developers", "IT Company for Startups", "Hire NextJS Developers",
+    "Hire ReactJS Programmers", "Hire Full Stack Developers India", "Outsource AI Development Services",
+    "Affordable Custom Software Developers", "Top Rated Digital Agency India", "Hire Meta Ads Experts",
+
+    // Niche & Domain Verticals
+    "Restaurant POS System Developers", "Retail Billing Software Development", "E-commerce Platform Builders",
+    "Fintech SaaS Developers", "Edtech Software Development Company", "Healthcare Software Solutions India",
+    "Real Estate Website Developers", "Logistics Software Developers", "Custom CRM ERP Development"
   ],
   authors: [{ name: "ITVEXO Team", url: SITE_URL }],
   creator: "ITVEXO",
