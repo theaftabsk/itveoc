@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Alex Rivera",
+    "title": "CEO, TechFlow",
+    "feedback": "ITVEXO transformed our workflow. Their AI automation saved us 20 hours a week!",
+    "avatar": "A"
+  },
+  {
+    "id": "2",
+    "name": "Sara Kim",
+    "title": "Founder, StyleBrand",
+    "feedback": "Our Meta Ads ROI tripled in 60 days. Best investment we ever made for our brand!",
+    "avatar": "S"
+  },
+  {
+    "id": "3",
+    "name": "Mike Hassan",
+    "title": "CTO, LaunchPad",
+    "feedback": "Delivered our entire platform in 5 weeks. Clean code, great design, and 24/7 support.",
+    "avatar": "M"
+  }
+]

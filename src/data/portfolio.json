@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "E-commerce Platform",
+    "description": "Scalable online store with Next.js",
+    "category": "Web"
+  },
+  {
+    "id": "2",
+    "title": "AI Support Bot",
+    "description": "Automated customer service",
+    "category": "AI"
+  },
+  {
+    "id": "3",
+    "title": "Meta Growth Campaign",
+    "description": "3x ROI for Fashion Brand",
+    "category": "Ads"
+  }
+]

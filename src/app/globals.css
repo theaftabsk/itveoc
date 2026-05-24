@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+}
+
+:root {
+  --bg: #F5F0E8;
+  --black: #0A0A0A;
+  --yellow: #FACC15;
+  --red: #EF4444;
+  --blue: #1D4ED8;
+  --green: #15803D;
+}
+
+body {
+  background: var(--bg);
+  color: var(--black);
+  font-family: var(--font-mono), monospace;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif), serif;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+/* Neo Brutalism card */
+.brut-card {
+  border: 3px solid #0A0A0A;
+  box-shadow: 6px 6px 0px #0A0A0A;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.brut-card:hover {
+  box-shadow: 10px 10px 0px #0A0A0A;
+  transform: translate(-2px, -2px);
+}
+
+/* Neo Brutalism button */
+.brut-btn {
+  border: 3px solid #0A0A0A;
+  box-shadow: 5px 5px 0px #0A0A0A;
+  font-family: var(--font-mono), monospace;
+  font-weight: 700;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.brut-btn:hover {
+  box-shadow: 8px 8px 0px #0A0A0A;
+  transform: translate(-2px, -2px);
+}
+
+.brut-btn:active {
+  box-shadow: 2px 2px 0px #0A0A0A;
+  transform: translate(2px, 2px);
+}
+
+/* Thick border divider */
+.brut-divider {
+  border-top: 4px solid #0A0A0A;
+}
+
+/* Marker / stamp look */
+.stamp {
+  display: inline-block;
+  border: 3px solid currentColor;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* No scrollbar for clean editorial look */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F5F0E8; }
+::-webkit-scrollbar-thumb { background: #0A0A0A; }

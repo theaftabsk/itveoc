@@ -1,0 +1,74 @@
+[
+  {
+    "id": "web-development",
+    "category": "Web & Software",
+    "tag": "Development",
+    "title": "Website Development",
+    "short": "Modern websites & scalable web applications.",
+    "description": "We engineer high-performance, scalable websites and progressive web apps using cutting-edge frameworks like React, Next.js, and Node.js. Our focus is on speed, security, and SEO-first architecture.",
+    "points": ["React & Next.js", "Node.js & REST APIs", "Progressive Web Apps", "SEO-First Architecture"],
+    "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=800&auto=format&fit=crop",
+    "color": "from-blue-500 to-cyan-400",
+    "accent": "yellow"
+  },
+  {
+    "id": "saas-build",
+    "category": "Web & Software",
+    "tag": "Product",
+    "title": "SaaS & Software",
+    "short": "Enterprise-grade scalable software products.",
+    "description": "Launch your own SaaS product from scratch. We handle the full product lifecycle — from architecture and multi-tenancy to billing, onboarding flows, and real-time analytics dashboards.",
+    "points": ["Multi-tenant Architecture", "Stripe Payment Integration", "User Onboarding Flows", "Analytics Dashboards"],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+    "color": "from-violet-500 to-indigo-400",
+    "accent": "red"
+  },
+  {
+    "id": "custom-software",
+    "category": "Web & Software",
+    "tag": "Enterprise",
+    "title": "Custom Software",
+    "short": "Tailored enterprise systems built for your business.",
+    "description": "Custom enterprise software tailored to your specific business logic. We build robust backend systems, microservices, cloud-native infrastructure, and internal tools that grow with you.",
+    "points": ["Microservices Architecture", "Cloud-Native (AWS/GCP)", "ERP & Internal Tools", "Legacy System Migration"],
+    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop",
+    "color": "from-emerald-500 to-teal-400",
+    "accent": "blue"
+  },
+  {
+    "id": "ai-automation",
+    "category": "AI & Automation",
+    "tag": "Intelligence",
+    "title": "AI Automation",
+    "short": "Custom AI systems powered by automation.",
+    "description": "End-to-end enterprise AI automation systems that transform your entire operations. From intelligent document processing to predictive analytics and automated decision-making pipelines.",
+    "points": ["Document Intelligence (OCR/NLP)", "Predictive Analytics", "Decision Automation Pipelines", "Real-time AI Dashboards"],
+    "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=800&auto=format&fit=crop",
+    "color": "from-purple-600 to-violet-400",
+    "accent": "black"
+  },
+  {
+    "id": "chatgpt-integration",
+    "category": "AI & Automation",
+    "tag": "AI",
+    "title": "ChatGPT Integration",
+    "short": "AI chatbots & smart assistants for your business.",
+    "description": "Integrate the power of GPT-4, Claude, and Gemini into your products. We build custom AI chatbots, support agents, content tools, and knowledge-base systems that work 24/7 for your team.",
+    "points": ["Custom AI Chatbots", "GPT-4 / Claude Integration", "AI Support Agents", "Knowledge Base Automation"],
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800&auto=format&fit=crop",
+    "color": "from-teal-500 to-emerald-400",
+    "accent": "green"
+  },
+  {
+    "id": "meta-ads",
+    "category": "Marketing & Growth",
+    "tag": "Advertising",
+    "title": "Growth Marketing",
+    "short": "Performance marketing engineered for ROI.",
+    "description": "High-ROI Meta Ad Campaigns, SEO strategies, and full-funnel digital marketing. We triple your return on ad spend with precise targeting, compelling creatives, and data-driven continuous optimization.",
+    "points": ["Meta Ads (FB & Instagram)", "SEO & Content Marketing", "Email & Lead Generation", "3x Average ROI Delivered"],
+    "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
+    "color": "from-orange-500 to-rose-400",
+    "accent": "orange"
+  }
+]
