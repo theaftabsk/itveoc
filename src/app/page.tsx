@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -7,14 +8,34 @@ import portfolioData from "@/data/portfolio.json";
 import servicesData from "@/data/services.json";
 import statsData from "@/data/stats.json";
 import clientsData from "@/data/clients.json";
+import partnersData from "@/data/partners.json";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as any } },
 };
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.1 } } };
 
 export default function Home() {
+  const [clients, setClients] = useState(clientsData);
+  const [partners, setPartners] = useState(partnersData);
+
+  useEffect(() => {
+    fetch("/api/testimonials")
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) setClients(data);
+      })
+      .catch((err) => console.error("Error fetching testimonials:", err));
+
+    fetch("/api/partners")
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) setPartners(data);
+      })
+      .catch((err) => console.error("Error fetching partners:", err));
+  }, []);
+
   return (
     <div className="overflow-x-hidden font-mono">
 
@@ -113,6 +134,43 @@ export default function Home() {
               {s} <span className="text-white mx-4">✦</span>
             </span>
           ))}
+        </div>
+      </section>
+
+      {/* ─── OUR CLIENTS — Cream ─── */}
+      <section className="bg-[#F5F0E8] border-b-4 border-black py-20 overflow-hidden">
+        <div className="max-w-[1400px] mx-auto px-6 mb-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b-4 border-black pb-6">
+            <div>
+              <p className="stamp border-black text-black mb-3">Partnerships</p>
+              <h2 className="font-serif text-5xl md:text-7xl text-black italic">Our Clients</h2>
+            </div>
+            <p className="font-mono text-xs uppercase tracking-widest text-black/50 mt-4 md:mt-0">
+              Trusted by startups & enterprises worldwide
+            </p>
+          </div>
+        </div>
+
+        {/* Continuous Looping Marquee */}
+        <div className="bg-white border-y-4 border-black py-8 overflow-hidden">
+          <div className="flex animate-[marquee_25s_linear_infinite] whitespace-nowrap gap-12 w-max">
+            {[...partners, ...partners, ...partners, ...partners].map((partner, idx) => (
+              <div key={`${partner.id}-${idx}`} className="inline-flex items-center justify-center px-6">
+                {partner.logo ? (
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 pointer-events-none"
+                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                  />
+                ) : (
+                  <span className="font-display text-2xl tracking-wider uppercase px-6 py-3 border-4 border-black bg-[#F5F0E8] text-black hover:bg-yellow-400 transition-colors select-none" style={{ boxShadow: "4px 4px 0 #000" }}>
+                    {partner.name}
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -401,7 +459,7 @@ export default function Home() {
 
           <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.1 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {clientsData.map((client, i) => (
+            {clients.map((client, i) => (
               <motion.div key={client.id} variants={fadeUp}
                 className="bg-white text-black p-8 border-4 border-black"
                 style={{ boxShadow: "6px 6px 0px #0A0A0A" }}

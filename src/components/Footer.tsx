@@ -22,11 +22,18 @@ export default function Footer() {
         <div className="md:border-r-4 border-black px-8 pt-8 md:pt-0">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-black mb-6 border-b-2 border-black pb-2">Company</p>
           <ul className="flex flex-col gap-3 text-xs text-black/70">
-            {["About Us", "Our Services", "Startup Rise", "Portfolio", "Contact Us", "Admin"].map((item) => (
-              <li key={item}>
-                <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`} className="hover:text-black transition-colors flex items-center gap-1 group uppercase tracking-wider font-bold">
+            {[
+              { label: "About Us", href: "/about" },
+              { label: "Our Services", href: "/services" },
+              { label: "Startup Rise", href: "/startup-rise" },
+              { label: "Portfolio", href: "/#portfolio" },
+              { label: "Contact Us", href: "/contact" },
+              { label: "Admin", href: "/admin" },
+            ].map((item) => (
+              <li key={item.label}>
+                <Link href={item.href} className="hover:text-black transition-colors flex items-center gap-1 group uppercase tracking-wider font-bold">
                   <span className="w-0 group-hover:w-3 overflow-hidden transition-all text-black">→</span>
-                  {item}
+                  {item.label}
                 </Link>
               </li>
             ))}
@@ -49,15 +56,15 @@ export default function Footer() {
           <ul className="flex flex-col gap-5 text-xs">
             <li className="flex items-start gap-3">
               <Mail className="w-4 h-4 text-black shrink-0 mt-0.5" />
-              <a href="mailto:hello@itvexo.com" className="text-black/70 hover:text-black font-bold uppercase tracking-wider">hello@itvexo.com</a>
+              <a href="mailto:support@itvexo.com" className="text-black/70 hover:text-black font-bold uppercase tracking-wider">support@itvexo.com</a>
             </li>
             <li className="flex items-start gap-3">
               <Phone className="w-4 h-4 text-black shrink-0 mt-0.5" />
-              <a href="tel:+1234567890" className="text-black/70 hover:text-black font-bold uppercase tracking-wider">+1 (234) 567-890</a>
+              <a href="tel:+919732351545" className="text-black/70 hover:text-black font-bold uppercase tracking-wider">+91 97323 51545</a>
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="w-4 h-4 text-black shrink-0 mt-0.5" />
-              <span className="text-black/70 font-bold uppercase tracking-wider">Global Remote / NY Office</span>
+              <span className="text-black/70 font-bold uppercase tracking-wider">India / Global Remote</span>
             </li>
           </ul>
 

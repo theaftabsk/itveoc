@@ -8,7 +8,7 @@ import servicesData from "@/data/services.json";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as any } },
 };
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.1 } } };
 
@@ -150,7 +150,7 @@ export default function ServicesPage() {
                 initial={{ opacity: 0, x: isEven ? -60 : 60 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as any }}
                 className={`relative overflow-hidden border-b-4 lg:border-b-0 ${isEven ? "lg:border-r-4" : "lg:border-l-4"} border-black min-h-[40vh] lg:min-h-[75vh] group`}
               >
                 <img

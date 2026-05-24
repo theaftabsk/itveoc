@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Global Group",
+    "logo": "https://i.ibb.co/Cp12rstP/logo.jpg"
+  },
+  {
+    "id": "2",
+    "name": "CircleTech",
+    "logo": "https://i.ibb.co/WpkvRMs4/cropped-circle-image.png"
+  },
+  {
+    "id": "3",
+    "name": "IQRA Model Mission",
+    "logo": "https://iqramodelmission.org/images/logo.png"
+  },
+  {
+    "id": "4",
+    "name": "LaunchPad",
+    "logo": ""
+  }
+]
