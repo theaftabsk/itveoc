@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About ITVEXO — AI, Software & Digital Growth Agency India",
   description:
-    "ITVEXO is a global AI, software development, and digital growth agency founded in Bangladesh, serving 30+ clients worldwide. Learn about our mission, team, tech stack, and values.",
+    "ITVEXO is a global AI, software development, and digital growth agency based in Kolkata, India, serving 30+ clients worldwide. Learn about our mission, team, tech stack, and values.",
   keywords: [
     "About ITVEXO", "ITVEXO AI Agency", "Software Company India",
     "IT Company About Us", "AI Agency India Team",

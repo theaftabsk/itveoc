@@ -267,7 +267,7 @@ export default function ContactPage() {
                 { icon: Mail,          label: "Email",     value: CONTACT_EMAIL,   href: `mailto:${CONTACT_EMAIL}`        },
                 { icon: Phone,         label: "Phone",     value: CONTACT_PHONE,   href: `tel:+919732351545`              },
                 { icon: MessageCircle, label: "WhatsApp",  value: CONTACT_PHONE,   href: `https://wa.me/${CONTACT_WHATSAPP}` },
-                { icon: MapPin,        label: "Location",  value: "Bangladesh / Global Remote", href: "#"               },
+                { icon: MapPin,        label: "Location",  value: "Kolkata, India / Global Remote", href: "#"               },
                 { icon: Clock,         label: "Hours",     value: "Mon–Sat 10am–7pm IST", href: "#"                    },
               ].map((item, i) => (
                 <a key={i} href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer"

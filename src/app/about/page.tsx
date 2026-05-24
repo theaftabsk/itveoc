@@ -90,7 +90,7 @@ export default function AboutPage() {
         {/* Top label bar */}
         <div className="bg-yellow-400 border-b-4 border-black flex items-center gap-6 px-8 py-3 flex-wrap">
           <span className="stamp border-black text-black">Est. 2020</span>
-          <span className="stamp border-black text-black">Bangladesh → Global</span>
+          <span className="stamp border-black text-black">Kolkata, India → Global</span>
           <span className="stamp border-black text-black">ISO Certified</span>
           <span className="ml-auto font-mono text-xs font-bold uppercase tracking-widest text-black/60 hidden md:block">
             ITVEXO / About — Vol. 04
