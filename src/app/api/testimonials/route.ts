@@ -1,16 +1,28 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import defaultClients from "@/data/clients.json";
 
 const DATA_FILE = path.join(process.cwd(), "src/data/clients.json");
 
 function readClients() {
-  const raw = fs.readFileSync(DATA_FILE, "utf-8");
-  return JSON.parse(raw);
+  try {
+    if (fs.existsSync(DATA_FILE)) {
+      const raw = fs.readFileSync(DATA_FILE, "utf-8");
+      return JSON.parse(raw);
+    }
+  } catch (error) {
+    console.error("Error reading clients.json from disk:", error);
+  }
+  return defaultClients;
 }
 
 function writeClients(data: unknown) {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), "utf-8");
+  try {
+    fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), "utf-8");
+  } catch (error) {
+    console.error("Error writing clients.json to disk:", error);
+  }
 }
 
 // GET — list all

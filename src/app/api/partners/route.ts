@@ -1,16 +1,28 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import defaultPartners from "@/data/partners.json";
 
 const DATA_FILE = path.join(process.cwd(), "src/data/partners.json");
 
 function readPartners() {
-  const raw = fs.readFileSync(DATA_FILE, "utf-8");
-  return JSON.parse(raw);
+  try {
+    if (fs.existsSync(DATA_FILE)) {
+      const raw = fs.readFileSync(DATA_FILE, "utf-8");
+      return JSON.parse(raw);
+    }
+  } catch (error) {
+    console.error("Error reading partners.json from disk:", error);
+  }
+  return defaultPartners;
 }
 
 function writePartners(data: unknown) {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), "utf-8");
+  try {
+    fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), "utf-8");
+  } catch (error) {
+    console.error("Error writing partners.json to disk:", error);
+  }
 }
 
 // GET — list all
@@ -18,8 +30,9 @@ export async function GET() {
   try {
     const partners = readPartners();
     return NextResponse.json(partners);
-  } catch {
-    return NextResponse.json({ error: "Failed to read partners" }, { status: 500 });
+  } catch (error: any) {
+    console.error("Error in api/partners GET:", error);
+    return NextResponse.json({ error: "Failed to read partners", details: error?.message || String(error) }, { status: 500 });
   }
 }
 
